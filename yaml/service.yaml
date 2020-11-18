@@ -9,5 +9,4 @@ spec:
   ports:
     - port: 8081
       targetPort: 80
-  externalTrafficPolicy: Local
   type: LoadBalancer
