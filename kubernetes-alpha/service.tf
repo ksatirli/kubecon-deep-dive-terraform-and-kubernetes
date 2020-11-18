@@ -13,17 +13,22 @@ resource "kubernetes_manifest" "service" {
     "spec" = {
       "ports" = [
         {
-          protocol   = "TCP"
-          port       = 8082
-          targetPort = 80
+          "protocol"   = "TCP"
+          "port"       = 8082
+          "targetPort" = 80
+          "nodePort"   = 30007
+
         },
       ]
+
+      # Needs to be set per #110, will be resolved with #41 soon
+      "clusterIP" = "10.111.211.101"
 
       "selector" = {
         "app" = "beacon-hcl"
       }
 
-      "type" = "LoadBalancer"
+      "type" = "NodePort"
     }
   }
 }
