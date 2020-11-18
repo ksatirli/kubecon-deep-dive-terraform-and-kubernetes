@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beacon-yaml
+  labels:
+    app: beacon-yaml
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: beacon-yaml
+  template:
+    metadata:
+      labels:
+        app: beacon-yaml
+    spec:
+      containers:
+        - name: beacon-yaml
+          image: onlydole/beacon:1.19.1
