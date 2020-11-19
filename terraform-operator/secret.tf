@@ -5,7 +5,7 @@ resource "kubernetes_secret" "terraformrc" {
   }
 
   data = {
-    "terraformrc" = file("${path.module}/credentials")
+    "credentials" = file("${path.module}/credentials")
   }
 
   type = "kubernetes.io/terraformrc"
