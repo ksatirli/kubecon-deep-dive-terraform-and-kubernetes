@@ -3,3 +3,4 @@
 *.tfstate.*
 *.tfplan*
 dev.log
+credentials
