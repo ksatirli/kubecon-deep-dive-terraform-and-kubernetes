@@ -34,7 +34,7 @@ This section is a collection of links that will help you make the most of today'
 ### Next Steps
 
 * See a Google Cloud Platform-specific implementation: [github.com/ksatirli/understanding-the-google-provider-for-terraform-feat-k8s](https://github.com/ksatirli/understanding-the-google-provider-for-terraform-feat-k8s)
-* Learn more about the Terraform Operator: [hashicorp.com/blog/creating-workspaces-with-the-hashicorp-terraform-operator-for-kubernetes](https://www.hashicorp.com/blog/creating-workspaces-with-the-hashicorp-terraform-operator-for-kubernetes)
+* Learn about the Terraform Operator: [hashicorp.com/blog/creating-workspaces-with-the-hashicorp-terraform-operator-for-kubernetes](https://www.hashicorp.com/blog/creating-workspaces-with-the-hashicorp-terraform-operator-for-kubernetes)
 * Learn about Terraform Code Quality: [speakerdeck.com/ksatirli/code-quality-for-terraform](https://speakerdeck.com/ksatirli/code-quality-for-terraform)
 
 ## Author Information
