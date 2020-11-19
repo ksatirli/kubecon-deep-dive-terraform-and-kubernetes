@@ -1,4 +1,8 @@
 resource "helm_release" "operator" {
+  depends_on      = [
+    kubernetes_secret.terraformrc,
+    kubernetes_secret.workspacesecrets
+  ]
   name            = local.helm_release_name
   chart           = "terraform"
   repository      = "https://helm.releases.hashicorp.com"

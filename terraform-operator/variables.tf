@@ -13,7 +13,7 @@ variable "helm_release_version" {
 variable "terraform_version" {
   type        = string
   description = "Terraform version"
-  default     = "0.13.5"
+  default     = "0.12.25"
 }
 
 resource "random_pet" "operator" {
