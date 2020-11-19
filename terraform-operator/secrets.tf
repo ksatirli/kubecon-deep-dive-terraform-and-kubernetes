@@ -11,3 +11,9 @@ resource "kubernetes_secret" "terraformrc" {
   type = "kubernetes.io/terraformrc"
 }
 
+resource "kubernetes_secret" "workspacesecrets" {
+  metadata {
+    name      = "workspacesecrets"
+    namespace = var.namespace_name
+  }
+}
