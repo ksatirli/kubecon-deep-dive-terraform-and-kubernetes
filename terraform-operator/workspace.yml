@@ -1,8 +1,9 @@
 ---
+
 apiVersion: app.terraform.io/v1alpha1
 kind: Workspace
 metadata:
-  name: "operator-manual-kubecon-deep-dive-terraform-and-kubernetes"
+  name: "kubecon-deep-dive-terraform-and-kubernetes"
 spec:
   organization: hashicorp-team-demo
   secretsMountPath: "/tmp/secrets"
